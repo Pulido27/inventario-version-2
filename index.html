@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INVENTARIO</title>
+
+    <!-- Icon -->
+    <link
+      rel="shortcut icon"
+      href="https://twemoji.maxcdn.com/2/svg/1f4d1.svg"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./public/style.css" />
+
+    <!-- Google Font Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <article class="title">INVENTARIO DE PRODUCTOS</article>
+
+    <main>
+      <section class="addProduct">
+        <article class="subtitle">AGREGAR</article>
+        <form action="#" id="formAdd">
+          <article class="formField">
+            <label>CODIGO <input type="number" id="productCode" /> </label>
+          </article>
+          <article class="formField">
+            <label>NOMBRE <input type="text" id="productName" /> </label>
+          </article>
+          <label>CANTIDAD <input type="number" id="productQuantity" /> </label>
+          <article class="formField"></article>
+          <label>COSTO <input type="number" id="productCost" /> </label>
+          <article class="formButton">
+            <input type="button" id="btnAddElement" value="AGREGAR" />
+          </article>
+        </form>
+      </section>
+
+      <section class="deleteProduct">
+        <article class="subtitle">ELIMINAR</article>
+        <form action="#" id="formDelete">
+          <article class="formField">
+            <label
+              >CODIGO <input type="text" id="productCodeToDelete" />
+            </label>
+          </article>
+          <article class="formButton">
+            <input type="button" id="btnDelElement" value="ELIMINAR" />
+          </article>
+        </form>
+      </section>
+
+      <section class="searchProduct">
+        <article class="subtitle">BUSCAR</article>
+        <form action="#" id="formSearch">
+          <article class="formField">
+            <label
+              >CODIGO <input type="text" id="productCodeToSearch" />
+            </label>
+          </article>
+          <article class="formButton">
+            <input type="button" id="btnSearchElement" value="BUSCAR" />
+          </article>
+        </form>
+      </section>
+
+      <section class="productList">
+        <article class="subtitle">LISTA DE PRODUCTOS</article>
+        <article class="formButton">
+          <input type="button" id="btnNormalList" value="LISTAR" />
+        </article>
+        <article class="formButton">
+          <input type="button" id="btnReverseList" value="LISTAR INVERSO" />
+        </article>
+        <article id="productList"></article>
+      </section>
+
+      <section class="actions">
+        <article class="subtitle">ACCIONES - BUSQUEDAS</article>
+        <article id="actions"></article>
+      </section>
+    </main>
+
+    <!-- Scripts Javascript -->
+    <script type="module" src="./public/main.js"></script>
+  </body>
+</html>
